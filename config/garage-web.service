@@ -1,0 +1,10 @@
+[Unit]
+Description=Garage Web Server
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/garage_web > /var/log/garage_web.log 2>&1
+
+[Install]
+WantedBy=multi-user.target
