@@ -22,3 +22,6 @@ run: sync
 
 deploy: sync
 	ssh -t ${USER}@${TARGET} "sudo cp ${TMP} ${INSTALL_BIN}; sudo service garage-web restart"
+
+clean:
+	rm bin/*
