@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/garage_web > /var/log/garage_web.log 2>&1
+ExecStart=/usr/bin/garage_web --address=0.0.0.0:8083
 
 [Install]
 WantedBy=multi-user.target
